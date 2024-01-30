@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Starfield</title>
+    <link rel="icon" href="favicon.svg" />
+    <meta name="theme-color" content="#2d2d2d" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="description" content="Browse the universe untethered." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/starfield.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <!--
+         #        .--.       .--.
+         #    _  `    \     /    `  _
+         #     `\.===. \.^./ .===./`
+         #            \/`"`\/
+         #         ,  |     |  ,
+         #        / `\|;-.-'|/` \
+         #       /    |::\  |    \
+         #    .-' ,-'`|:::; |`'-, '-.
+         #        |   |::::\|   | 
+         #        |   |::::;|   |
+         #        |   \:::://   |
+         #        |    `.://'   |
+         #       .'             `.
+         #    _,'                 `,_
+           -->
+    <div class="cursor"><div class="planet"></div></div>
+    <div class="container">
+      <div class="mainhead">
+        <div class="title"><h1>Starfield</h1></div>
+        <div class="desc">Browse The Universe Untethered</div>
+        <input aria-label="search" type="text" class="galaxy-input" />
+        <button class="search-btn" id="launchevent">🚀 Launch</button>
+      </div>
+    </div>
+
+    <!-- Starfield Scripts -->
+    <canvas id="canvas" height="100%" width="100%"></canvas>
+    <script src="js/starfield.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/launchevent.js"></script>
+    <script src="js/mobiledetector.js"></script>
+    <script src="js/registersw.js"></script>
+
+    <!-- UltraViolet ~ Scripts -->
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
